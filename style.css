@@ -29,6 +29,9 @@ body {
 }
 
 @media (max-width: 768px) {
+    .home {
+        padding-top: 120px; 
+    }
     .about-box img {
         display: block;
         margin: 0 auto;
@@ -70,6 +73,7 @@ body {
     padding: 20px 30px;
     background: #020617;
     position: relative;
+    z-index: 1000;
 }
 
 .navbar ul {
@@ -83,6 +87,7 @@ body {
     width: 100%; 
     background: #020617; 
     padding: 15px 0;
+    z-index: 999; 
 }
 
 .navbar ul li {
