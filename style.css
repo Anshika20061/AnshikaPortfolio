@@ -40,7 +40,7 @@ body {
     }
 
     .menu-toggle {
-        display: block;
+        display: none;
     }
 
     .navbar ul {
@@ -71,26 +71,61 @@ body {
 
 /* NAVBAR  */
 .navbar {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     padding: 20px 50px;
-    background: #020617;
-}
-.navbar ul {
+    background: #020617; */
     display: flex;
-    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background: #020617;
+    position: relative;
 }
+
+.navbar ul {
+    /* display: flex;
+    gap: 30px; */
+    list-style: none; 
+    display: none; 
+    flex-direction: column; 
+    gap: 15px; 
+    position: absolute; 
+    top: 60px; 
+    right: 0; 
+    width: 100%; 
+    background: #020617; 
+    padding: 15px 0;
+}
+
+.navbar ul li {
+    text-align: center;
+}
+
+.navbar ul li a {
+    color: var(--text); 
+    text-decoration: none; 
+    font-size: 1.1rem;
+}
+
 .navbar a {
     color: white;
     text-decoration: none;
     font-size: 1rem;
 }
+
 .navbar a:hover {
     color: var(--primary);
 }
 
 .navbar h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    /* font-size: 2rem; */
+}
+
+/* Show menu when active */
+.navbar ul.active {
+    display: flex;
 }
 
 /* HOME */
