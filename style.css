@@ -37,8 +37,6 @@ body {
     }
     .navbar {
         padding: 20px;
-        position: relative;
-        z-index: 1000;
     }
 
     .menu-toggle {
@@ -47,19 +45,18 @@ body {
 
     .navbar ul {
         position: absolute;
-        /* top: 70px; */
-        top: 100%;
-        /* right: 0; */
+        top: 70px; 
+        right: 0;
         background: #020617;
         width: 100%;
         flex-direction: column;
         align-items: center;
         display: none;
-        padding: 20px 0;
+        /* padding: 20px 0;
         margin: 0;
         list-style: none;
         gap: 15px;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.4); */
     }
 
     .navbar ul.active {
@@ -67,15 +64,7 @@ body {
     }
 
     .navbar ul li {
-        /* padding: 15px 0; */
-        width: 100%;
-        text-align: center;
-    }
-    .navbar ul li a {
-        display: block;
-        width: 100%;
-        padding: 12px 0;
-        font-size: 1.1rem;
+        padding: 15px 0;
     }
 }
 
